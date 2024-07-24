@@ -20,53 +20,77 @@
                                     <p class=" font-serif text-center "> ce boutton permet d'ajouter un admin</p>
                                 </span>
                             </form>
-                            <form method="GET" action="{{ route('register') }}">
+                            <form method="GET" action="{{ route('register') }}" class="group">
                                 @csrf
                                 <button type="submit" class="w-full px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-700">
-                                    {{ __('Action ') }}
+                                    {{ __('Ajouter Admin ') }}
                                 </button>
+                                <span class=" hidden group-hover:block">
+                                    <p class=" font-serif text-center "> ce boutton permet d'ajouter un admin</p>
+                                </span>
                             </form>
-                            <form method="GET" action="{{ route('register') }}">
+                            <form method="GET" action="{{ route('register') }}" class="group">
                                 @csrf
                                 <button type="submit" class="w-full px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-700">
-                                    {{ __('Action ') }}
+                                    {{ __('Ajouter Admin ') }}
                                 </button>
+                                <span class=" hidden group-hover:block">
+                                    <p class=" font-serif text-center "> ce boutton permet d'ajouter un admin</p>
+                                </span>
                             </form>
-                            <form method="GET" action="{{ route('register') }}">
+                            <form method="GET" action="{{ route('register') }}" class="group">
                                 @csrf
                                 <button type="submit" class="w-full px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-700">
-                                    {{ __('Action ') }}
+                                    {{ __('Ajouter Admin ') }}
                                 </button>
+                                <span class=" hidden group-hover:block">
+                                    <p class=" font-serif text-center "> ce boutton permet d'ajouter un admin</p>
+                                </span>
                             </form>
-                            <form method="GET" action="{{ route('register') }}">
+                            <form method="GET" action="{{ route('register') }}" class="group">
                                 @csrf
                                 <button type="submit" class="w-full px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-700">
-                                    {{ __('Action ') }}
+                                    {{ __('Ajouter Admin ') }}
                                 </button>
+                                <span class=" hidden group-hover:block">
+                                    <p class=" font-serif text-center "> ce boutton permet d'ajouter un admin</p>
+                                </span>
                             </form>
-                            <form method="GET" action="{{ route('register') }}">
+                            <form method="GET" action="{{ route('register') }}" class="group">
                                 @csrf
                                 <button type="submit" class="w-full px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-700">
-                                    {{ __('Action ') }}
+                                    {{ __('Ajouter Admin ') }}
                                 </button>
+                                <span class=" hidden group-hover:block">
+                                    <p class=" font-serif text-center "> ce boutton permet d'ajouter un admin</p>
+                                </span>
                             </form>
-                            <form method="GET" action="{{ route('register') }}">
+                            <form method="GET" action="{{ route('register') }}" class="group">
                                 @csrf
                                 <button type="submit" class="w-full px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-700">
-                                    {{ __('Action ') }}
+                                    {{ __('Ajouter Admin ') }}
                                 </button>
+                                <span class=" hidden group-hover:block">
+                                    <p class=" font-serif text-center "> ce boutton permet d'ajouter un admin</p>
+                                </span>
                             </form>
-                            <form method="GET" action="{{ route('register') }}">
+                            <form method="GET" action="{{ route('register') }}" class="group">
                                 @csrf
                                 <button type="submit" class="w-full px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-700">
-                                    {{ __('Action ') }}
+                                    {{ __('Ajouter Admin ') }}
                                 </button>
+                                <span class=" hidden group-hover:block">
+                                    <p class=" font-serif text-center "> ce boutton permet d'ajouter un admin</p>
+                                </span>
                             </form>
-                            <form method="GET" action="{{ route('register') }}">
+                            <form method="GET" action="{{ route('register') }}" class="group">
                                 @csrf
                                 <button type="submit" class="w-full px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-700">
-                                    {{ __('Action ') }}
+                                    {{ __('Ajouter Admin ') }}
                                 </button>
+                                <span class=" hidden group-hover:block">
+                                    <p class=" font-serif text-center "> ce boutton permet d'ajouter un admin</p>
+                                </span>
                             </form>
                     </div>
                 </div>
