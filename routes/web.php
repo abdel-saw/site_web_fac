@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::view('/', 'view_user.Acceuil')
+Route::view('/', 'view_user.Acceuil.Acceuil')
     ->name('acceuil');
 
 Route::view('dashboard', 'view_admin.dashboard')
