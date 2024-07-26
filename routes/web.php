@@ -12,7 +12,9 @@ Route::view('dashboard', 'view_admin.dashboard')
 Route::view('profile', 'view_admin.profile')
     ->middleware(['auth'])
     ->name('profile');
-Route::view('/Sucess', 'succes')
-    ->name('Sucess');
+Route::view('/A propos de la FSTS', 'view_user.A_Propos.A_Propos')
+    ->name('a-propos');
+Route::view('/Mot du doyen','view_user.A_Propos.Mots_Doyen')
+    ->name('mots-doyen');
 
 require __DIR__.'/auth.php';
