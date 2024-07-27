@@ -23,10 +23,10 @@
                             <form method="GET" action="{{ route('register') }}" class="group">
                                 @csrf
                                 <button type="submit" class="w-full px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-700">
-                                    {{ __('Ajouter Admin ') }}
+                                    {{ __('Gestion commissions et Conseils') }}
                                 </button>
                                 <span class=" hidden group-hover:block">
-                                    <p class=" font-serif text-center "> ce boutton permet d'ajouter un admin</p>
+                                    <p class=" font-serif text-center "> ce boutton permet de gérer les aspects relatifs au commissions et aux conseils</p>
                                 </span>
                             </form>
                             <form method="GET" action="{{ route('register') }}" class="group">

@@ -28,14 +28,14 @@
                                 Mot du Doyen
                             </a>
                             
-                            <a href="#"
+                            <a href="{{route('fsts-chiffres')}}"
                                class="text-sm font-bold text-gray-800 hover:underline hover:text-orange-500 nav-item"
                                @click="active = 'section3'"
                                :class="{ 'underline text-2xl bg-gray-200': active === 'section3', 'text-base': active !== 'section3' }">
                                 FSTS en chiffres
                             </a>
                             
-                            <a href="#"
+                            <a href="https://www.fsts.ac.ma/wp-content/uploads/2024/03/Projet_dev_FSTS.pdf " target="_blank"
                                class="text-sm font-bold text-gray-800 hover:underline hover:text-orange-500 nav-item"
                                @click="active = 'section4'"
                                :class="{ 'underline text-2xl bg-gray-200': active === 'section4', 'text-base': active !== 'section4' }">
