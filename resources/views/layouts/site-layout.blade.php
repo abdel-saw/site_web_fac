@@ -68,8 +68,8 @@
                     <a href="{{route('a-propos')}}" class=" hover:text-indigo-900 hover:font-bold text-zinc-600">A propos de la FSTS</a>
                     <ul class="hidden group-hover:block w-60 absolute bg-blue-900 text-white rounded-md p-2 space y-1">
                         <li><a href="{{route('mots-doyen')}}" class=" hover:text-orange-300 hover:font-bold underline text-sm">Mot du Doyen</a></li>
-                        <li><a href="#" class=" hover:text-orange-300 hover:font-bold underline text-sm">FSTS en chiffres</a></li>
-                        <li><a href="#" class=" hover:text-orange-300 hover:font-bold underline text-sm">Projet de développement de la FSTS : 2024-2027 </a></li>
+                        <li><a href="{{route('fsts-chiffres')}}" class=" hover:text-orange-300 hover:font-bold underline text-sm">FSTS en chiffres</a></li>
+                        <li><a href="https://www.fsts.ac.ma/wp-content/uploads/2024/03/Projet_dev_FSTS.pdf" target="_blank" class=" hover:text-orange-300 hover:font-bold underline text-sm">Projet de développement de la FSTS : 2024-2027 </a></li>
                         <li><a href="#" class=" hover:text-orange-300 hover:font-bold underline text-sm">Conseils et Commissions</a></li>
                         <li><a href="#" class=" hover:text-orange-300 hover:font-bold underline text-sm">Accords et Convention</a></li>
                         <li><a href="#" class=" hover:text-orange-300 hover:font-bold underline text-sm">Départements</a></li>
