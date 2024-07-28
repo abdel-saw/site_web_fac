@@ -76,7 +76,7 @@
 
                     </ul>
                 </li>
-                
+
                 <li class=" relative group">
                     <a href="#" class=" hover:text-indigo-900 hover:font-bold text-zinc-600">Formation Initiale</a>
                     <ul class="hidden group-hover:block w-60 absolute bg-blue-900 text-white rounded-md p-2 space y-1">
@@ -87,11 +87,11 @@
 
                     </ul>
                 </li>
-                
+
                 <li class=" relative group">
                     <a href="#" class=" hover:text-indigo-900 hover:font-bold text-zinc-600">Formation Continue</a>
                 </li>
-               
+
                 <li class=" relative group">
                     <a href="#" class=" hover:text-indigo-900 hover:font-bold text-zinc-600">Recherches Scientifiques </a>
                     <ul class="hidden group-hover:block w-60 absolute bg-blue-900 text-white rounded-md p-2 space y-1">
@@ -129,7 +129,7 @@
             //hide and schow navbar on scroll
             let lastScrollTop = 0;
             const header_navbar = document.getElementById('header_nav');
-        
+
             window.addEventListener('scroll', function() {
                 const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
                 if (scrollTop > lastScrollTop) {
@@ -147,10 +147,10 @@
             const navMenu = document.getElementById('nav-menu');
             navToggle.addEventListener('click',() => {navMenu.classList.toggle('hidden');});
         </script>
-        
+
     </header>
 
-    
+
 
     <main class=" pt-56 md:pt-32 px-4">
         {{ $main }}

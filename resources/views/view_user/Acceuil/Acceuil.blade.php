@@ -1,5 +1,5 @@
 <x-site-layout>
     <x-slot name="main">
-        hjdsfhjdhjdgkjlfhk;lghkl
+        <img src="{{ asset('images/app.jpg') }}" alt="aap">
     </x-slot>
-</x-site-layout>    
+</x-site-layout>
