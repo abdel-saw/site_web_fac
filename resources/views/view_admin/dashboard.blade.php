@@ -20,7 +20,7 @@
                                     <p class=" font-serif text-center "> ce boutton permet d'ajouter un admin</p>
                                 </span>
                             </form>
-                            <form method="GET" action="{{ route('register') }}" class="group">
+                            <form method="GET" action="{{ route('gest-com-cons') }}" class="group">
                                 @csrf
                                 <button type="submit" class="w-full px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-700">
                                     {{ __('Gestion commissions et Conseils') }}
