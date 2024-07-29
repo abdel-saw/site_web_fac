@@ -1,9 +1,10 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AnnouncementController;
 
-Route::view('/', 'view_user.Acceuil.Acceuil')
-    ->name('acceuil');
+Route::get('/', [AnnouncementController::class, 'index'])->name('acceuil');
+Route::get('/announcements/{id}', [AnnouncementController::class, 'show'])->name('announcements.show');
 
 Route::view('dashboard', 'view_admin.dashboard')
     ->middleware(['auth', 'verified'])

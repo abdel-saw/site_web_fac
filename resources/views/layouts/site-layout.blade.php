@@ -11,6 +11,82 @@
     <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+    <!-- Inclure Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        .carousel-item img {
+            width: 100%;
+            height: 500px; /* Ajustez la hauteur selon vos besoins */
+            object-fit: cover; /* Cette propriété CSS permet de couvrir l'ensemble du conteneur tout en maintenant les proportions */
+        }
+        .carousel-caption {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%); /* Centre la légende au milieu de l'image */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px; /* Ajouter un peu de padding pour que le texte ne touche pas les bords */
+            width: 100%; /* Assure que la légende occupe toute la largeur */
+            box-sizing: border-box; /* Inclut le padding dans la largeur totale */
+        }
+        .carousel-caption h5 {
+            font-size: 2rem;
+            color: white;
+            margin-bottom: 20px;
+            background: rgba(0, 0, 0, 0.5); /* Ajouter un fond semi-transparent uniquement au titre */
+            padding: 10px; /* Ajouter du padding pour que le texte ne touche pas les bords du fond */
+            border-radius: 5px; /* Arrondir les coins du fond semi-transparent */
+        }
+        .carousel-caption a {
+            margin-top: 10px;
+            display: inline-block;
+            background-color: #0626b5; /* Couleur bleu foncé */
+            border-color: #0626b5; /* Couleur bleu foncé */
+            color: white;
+            padding: 10px 20px; /* Ajouter du padding pour un bouton plus spacieux */
+            text-decoration: none; /* Retirer le soulignement du lien */
+            border-radius: 5px; /* Arrondir les coins du bouton */
+        }
+        .carousel-caption a:hover {
+            background-color: #041a7a; /* Couleur bleu foncé plus sombre pour le hover */
+            border-color: #041a7a; /* Couleur bleu foncé plus sombre pour le hover */
+        }
+        .carousel-control-prev,
+        .carousel-control-next {
+            bottom: 20px; /* Ajuster pour que les contrôles ne se chevauchent pas avec la légende */
+        }
+
+        .card-img-top {
+        width: 100%;
+        height: auto; /* Ajuste la hauteur automatiquement en fonction de la largeur */
+        max-height: 300px; /* Ajuste cette valeur selon la taille souhaitée pour la photo d'annonce */
+        object-fit: contain; /* Assure que l'image entière est visible sans être rognée */
+        }
+        .card-title {
+        font-weight: bold; /* Rendre le titre en gras */
+        font-size: 1.5rem; /* Agrandir la taille du titre */
+        text-align: center; /* Centre le titre */
+        }
+        .card-text {
+        font-weight: normal; /* Assure que la description est écrite simplement */
+        font-size: 1.2rem; /* Agrandir la taille de la description */
+        }
+        .btn-primary {
+        background-color: #0626b5; /* Changer la couleur de fond du bouton */
+        border-color: #0626b5; /* Changer la couleur de la bordure du bouton */
+        }
+        .btn-primary:hover {
+        background-color: #0626b5; /* Changer la couleur de fond du bouton au survol */
+        border-color: #0626b5; /* Changer la couleur de la bordure du bouton au survol */
+        }
+    </style>
+
+
     <!-- Scripts -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
@@ -61,7 +137,7 @@
 
             <ul id="nav-menu" class ="md:flex md:items-center space-x-2">
                 <li class="relative group">
-                    <a href="#" class=" hover:text-indigo-900 text-zinc-600 hover:font-bold">Accueil</a>
+                    <a href="{{route('acceuil')}}" class=" hover:text-indigo-900 text-zinc-600 hover:font-bold">Accueil</a>
                 </li>
 
                 <li class=" relative group">
@@ -200,6 +276,11 @@
         </div>
 
     </footer>
+
+    <!-- Inclure jQuery et Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
 </body>
 
