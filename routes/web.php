@@ -19,6 +19,9 @@ Route::view('/Mot du doyen','view_user.A_Propos.Mots_Doyen')
 Route::view('/FSTS en chiffres','view_user.A_Propos.FSTS_chiffres')
     ->name('fsts-chiffres');
 Route::view('/Gestions des conseils et des commissions','view_admin.Gestion_Conseil_Commi.ListeMembre')
-     ->middleware(['auth'])
+    ->middleware(['auth'])
     ->name('gest-com-cons');
+Route::view('/new commission-conseil member ','view_admin.Gestion_Conseil_Commi.AddMemberForm')
+    ->middleware(['auth'])
+    ->name('add-com-cons-member');
 require __DIR__.'/auth.php';
