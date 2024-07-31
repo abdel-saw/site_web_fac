@@ -5,6 +5,9 @@ use App\Http\Controllers\AnnouncementController;
 
 Route::get('/', [AnnouncementController::class, 'index'])->name('acceuil');
 Route::get('/announcements/{id}', [AnnouncementController::class, 'show'])->name('announcements.show');
+Route::get('/images/{id}', [AnnouncementController::class, 'showImage'])->name('images.show');
+Route::get('/announcements/{id}/image', [AnnouncementController::class, 'showImage'])->name('announcements.image');
+
 
 Route::view('dashboard', 'view_admin.dashboard')
     ->middleware(['auth', 'verified'])

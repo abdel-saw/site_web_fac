@@ -17,7 +17,7 @@
     <style>
         .carousel-item img {
             width: 100%;
-            height: 500px; /* Ajustez la hauteur selon vos besoins */
+            height: 600px; /* Ajustez la hauteur selon vos besoins */
             object-fit: cover; /* Cette propriété CSS permet de couvrir l'ensemble du conteneur tout en maintenant les proportions */
         }
         .carousel-caption {
@@ -62,29 +62,58 @@
         }
 
 
-        .card-img-top {
-        width: 100%;
-        height: auto; /* Ajuste la hauteur automatiquement en fonction de la largeur */
-        max-height: 300px; /* Ajuste cette valeur selon la taille souhaitée pour la photo d'annonce */
-        object-fit: contain; /* Assure que l'image entière est visible sans être rognée */
-        }
-        .card-title {
-        font-weight: bold; /* Rendre le titre en gras */
-        font-size: 1.5rem; /* Agrandir la taille du titre */
-        text-align: center; /* Centre le titre */
-        }
-        .card-text {
-        font-weight: normal; /* Assure que la description est écrite simplement */
-        font-size: 1.2rem; /* Agrandir la taille de la description */
-        }
-        .btn-primary {
-        background-color: #0626b5; /* Changer la couleur de fond du bouton */
-        border-color: #0626b5; /* Changer la couleur de la bordure du bouton */
-        }
-        .btn-primary:hover {
-        background-color: #0626b5; /* Changer la couleur de fond du bouton au survol */
-        border-color: #0626b5; /* Changer la couleur de la bordure du bouton au survol */
-        }
+        .card {
+    width: 100%;
+    max-width: 900px; /* Largeur maximale de la carte */
+    margin: auto; /* Centre la carte horizontalement */
+    margin-bottom: 2rem; /* Ajoute un espace en bas de la carte */
+    overflow: hidden; /* Assure que le contenu ne déborde pas du conteneur */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ajoute une ombre pour un effet d'élévation */
+    border-radius: 8px; /* Ajoute des coins arrondis */
+}
+
+.card-img-top {
+    width: 100%;
+    height: auto;
+    max-height: 500px; /* Augmente la hauteur maximale de l'image */
+    object-fit: cover; /* Remplit le conteneur tout en maintenant les proportions */
+    border-top-left-radius: 8px; /* Coin supérieur gauche arrondi */
+    border-top-right-radius: 8px; /* Coin supérieur droit arrondi */
+}
+
+.card-body {
+    padding: 1.5rem; /* Ajuste le padding autour du contenu */
+}
+
+.card-title {
+    font-weight: bold;
+    font-size: 1.8rem; /* Augmente la taille du titre */
+    text-align: center;
+    margin-bottom: 1rem; /* Ajoute un espace en bas du titre */
+}
+
+.card-text {
+    font-weight: normal;
+    font-size: 1.2rem;
+    text-align: justify; /* Justifie le texte pour une meilleure lisibilité */
+}
+
+.btn-primary {
+    background-color: #0626b5;
+    border-color: #0626b5;
+    display: inline-block; /* Assure que le bouton prend toute la largeur disponible */
+    width: auto; /* Assure que le bouton prend toute la largeur disponible */
+    text-align: center; /* Centre le texte du bouton */
+    margin-top: 1rem; /* Ajoute un espace en haut du bouton */
+}
+
+.btn-primary:hover {
+    background-color: #0626b5;
+    border-color: #0626b5;
+}
+
+
+
 
 
         .director-section {

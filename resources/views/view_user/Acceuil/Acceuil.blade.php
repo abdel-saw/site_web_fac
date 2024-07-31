@@ -10,7 +10,7 @@
             <div class="carousel-inner">
                 @foreach($announcements as $key => $announcement)
                     <div class="carousel-item {{ $key == 0 ? 'active' : '' }}">
-                        <img class="d-block w-100" src="{{ asset($announcement->image_path) }}" alt="{{ $announcement->title }}">
+                        <img class="d-block w-100" src="{{ route('images.show', $announcement->id) }}" alt="{{ $announcement->title }}">
                         <div class="carousel-caption d-none d-md-block">
                             <h5>{{ $announcement->title }}</h5>
                             <a href="{{ route('announcements.show', $announcement->id) }}" class="btn btn-primary">En savoir plus</a>
