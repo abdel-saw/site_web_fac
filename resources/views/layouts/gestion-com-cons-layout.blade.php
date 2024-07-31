@@ -8,7 +8,7 @@
     <div  class=" flex flex-row space-x-16 py-10 px-10" >
         <!--sidebar-->
         <div class="basis-1/4 grid grid-cols-1 space-y-3">
-            <form method="GET" action="{{ route('register') }}" class="group">
+            <form method="GET" action="{{ route('gest-com-cons') }}" class="group">
                 @csrf
                 <button type="submit" class="w-full px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-700">
                     {{ __('Liste des membres') }}
