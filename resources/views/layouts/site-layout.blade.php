@@ -61,6 +61,7 @@
             bottom: 20px; /* Ajuster pour que les contrôles ne se chevauchent pas avec la légende */
         }
 
+
         .card-img-top {
         width: 100%;
         height: auto; /* Ajuste la hauteur automatiquement en fonction de la largeur */
@@ -84,6 +85,42 @@
         background-color: #0626b5; /* Changer la couleur de fond du bouton au survol */
         border-color: #0626b5; /* Changer la couleur de la bordure du bouton au survol */
         }
+
+
+        .director-section {
+        padding: 20px;
+        background-color: #f8f9fa;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        max-width: 900px;
+        margin: auto;
+        text-align: left;
+        }
+        .director-section h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+        }
+        .director-section blockquote {
+        font-size: 16px;
+        color: #666;
+        border-left: 5px solid #0626b5;
+        padding-left: 15px;
+        margin-left: 0;
+        }
+        .director-section .read-more-btn {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 10px 20px;
+        background-color: #0626b5;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+        }
+        .director-section .read-more-btn:hover {
+        background-color: #0626b5;
+        }
+
     </style>
 
 
