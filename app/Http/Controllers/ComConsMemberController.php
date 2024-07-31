@@ -13,7 +13,7 @@ class ComConsMemberController extends Controller
         return view('view_admin.Gestion_Conseil_Commi.AddMemberForm');
     }
 
-    /* store thne new it in the */
+    /* store the new member in the database */
 
     public function store(Request $request)
     {

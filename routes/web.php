@@ -4,7 +4,8 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AnnouncementController;
 use App\Http\Controllers\ComConsMemberController;
 
-
+Route::get('/', [AnnouncementController::class, 'index'])->name('acceuil');
+Route::get('/announcements/{id}', [AnnouncementController::class, 'show'])->name('announcements.show');
 
 Route::view('dashboard', 'view_admin.dashboard')
     ->middleware(['auth', 'verified'])
