@@ -46,6 +46,6 @@ class ComConsMemberController extends Controller
     ]);
 
         Commissions_Conseil::create($validateData);
-        return redirect()->route('add-com-cons')->with('success','new commission-conseil add successfully');
+        return redirect()->route('add-com-cons')->with('success1','new commission-conseil add successfully');
     }
 }

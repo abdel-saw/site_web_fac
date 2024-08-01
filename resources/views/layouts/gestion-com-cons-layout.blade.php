@@ -7,7 +7,7 @@
 
     <div  class=" flex flex-row space-x-16 py-10 px-10" >
         <!--sidebar-->
-        <div class="basis-1/4 grid grid-cols-1 space-y-3">
+        <div class="basis-1/4 grid grid-cols-1 space-y-3 h-2/3">
             <form method="GET" action="{{ route('gest-com-cons') }}" class="group">
                 @csrf
                 <button type="submit" class="w-full px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-700">
@@ -24,6 +24,15 @@
                 </button>
                 <span class=" hidden group-hover:block">
                     <p class=" font-serif text-center text-white"> ce boutton permet de créer une nouvelle commission ou conseil</p>
+                </span>
+            </form>
+            <form method="GET" action="{{ route('voir-com-cons') }}" class="group">
+                @csrf
+                <button type="submit" class="w-full px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-700">
+                    {{ __('Voir les commissions ') }}
+                </button>
+                <span class=" hidden group-hover:block">
+                    <p class=" font-serif text-center text-white"> ce boutton permet de voir toutes les commissions existantes , de rajouter ou de supprimer des membres ou des commissions</p>
                 </span>
             </form>
             

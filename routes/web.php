@@ -31,9 +31,10 @@ Route::view('/Gestions des conseils et des commissions','view_admin.Gestion_Cons
 Route::post('/add new commission-conseil member',[ComConsMemberController::class,'storeMember'])
     ->middleware(['auth','verified'])    
     ->name('store-com-cons-member');
-Route::get('/add new commission-conseil-p',[ComConsMemberController::class,'createComm_Cons'])->name('add-com-cons');
+Route::get('/add new commission-conseil',[ComConsMemberController::class,'createComm_Cons'])->name('add-com-cons');
 Route::post('/add new commission-conseil-success',[ComConsMemberController::class,'storeComm_Cons'])
     ->middleware(['auth','verified'])    
     ->name('store-com-cons');
+Route::view('/Conseils et Commissions','view_admin.Gestion_Conseil_Commi.VoirComCons')->name('voir-com-cons');
 
 require __DIR__.'/auth.php';

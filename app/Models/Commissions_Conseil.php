@@ -16,11 +16,4 @@ class Commissions_Conseil extends Model
         return $this->belongsToMany(Members::class ,'com_cons_members');
     }
 
-    protected function casts(): array
-    {
-        return [
-            'date_creation' => 'datetime',
-            
-        ];
-    }
 }
