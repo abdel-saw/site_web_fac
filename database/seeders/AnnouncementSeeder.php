@@ -13,32 +13,32 @@ class AnnouncementSeeder extends Seeder
         Announcement::create([
             'title' => 'Annonce 1',
             'description' => 'Description de l\'annonce 1',
-            'image_path' => 'images/annonce.jpg'
+            'image' => 'images/annonce.jpg'
         ]);
         Announcement::create([
             'title' => 'Annonce 2',
             'description' => 'Description de l\'annonce 2',
-            'image_path' => 'images/annonce.jpg'
+            'image' => 'images/annonce.jpg'
         ]);
         Announcement::create([
             'title' => 'Annonce 3',
             'description' => 'Description de l\'annonce 3',
-            'image_path' => 'images/annonce.jpg'
+            'image' => 'images/annonce.jpg'
         ]);
         Announcement::create([
             'title' => 'Annonce 4',
             'description' => 'Description de l\'annonce 4',
-            'image_path' => 'images/annonce.jpg'
+            'image' => 'images/annonce.jpg'
         ]);
         Announcement::create([
             'title' => 'Annonce 5',
             'description' => 'Description de l\'annonce 6',
-            'image_path' => 'images/annonce.jpg'
+            'image' => 'images/annonce.jpg'
         ]);
         Announcement::create([
             'title' => 'Annonce 6',
             'description' => 'Description de l\'annonce 7',
-            'image_path' => 'images/annonce.jpg'
+            'image' => 'images/annonce.jpg'
         ]);
 
     }

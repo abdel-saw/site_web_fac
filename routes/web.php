@@ -26,10 +26,14 @@ Route::view('/FSTS en chiffres','view_user.A_Propos.FSTS_chiffres')
 Route::view('/Gestions des conseils et des commissions','view_admin.Gestion_Conseil_Commi.ListeMembre')
     ->middleware(['auth'])
     ->name('gest-com-cons');
-    Route::get('/add new commission-conseil member',[ComConsMemberController::class,'create'])   
+    Route::get('/add new commission-conseil member',[ComConsMemberController::class,'createMember'])   
     ->name('add-com-cons-member');
-Route::post('/add new commission-conseil member',[ComConsMemberController::class,'store'])
+Route::post('/add new commission-conseil member',[ComConsMemberController::class,'storeMember'])
     ->middleware(['auth','verified'])    
     ->name('store-com-cons-member');
+Route::get('/add new commission-conseil-p',[ComConsMemberController::class,'createComm_Cons'])->name('add-com-cons');
+Route::post('/add new commission-conseil-success',[ComConsMemberController::class,'storeComm_Cons'])
+    ->middleware(['auth','verified'])    
+    ->name('store-com-cons');
 
 require __DIR__.'/auth.php';

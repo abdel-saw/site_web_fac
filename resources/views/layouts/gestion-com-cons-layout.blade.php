@@ -17,7 +17,7 @@
                     <p class=" font-serif text-center text-white"> ce boutton permet de voir tous les membres associés à une commission ou a un conseil</p>
                 </span>
             </form>
-            <form method="GET" action="{{ route('register') }}" class="group">
+            <form method="GET" action="{{ route('add-com-cons') }}" class="group">
                 @csrf
                 <button type="submit" class="w-full px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-700">
                     {{ __('Créer nouvelle commission ou conseil ') }}
