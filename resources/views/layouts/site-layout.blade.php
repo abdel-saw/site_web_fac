@@ -17,7 +17,7 @@
     <style>
         .carousel-item img {
             width: 100%;
-            height: 500px; /* Ajustez la hauteur selon vos besoins */
+            height: 600px; /* Ajustez la hauteur selon vos besoins */
             object-fit: cover; /* Cette propriété CSS permet de couvrir l'ensemble du conteneur tout en maintenant les proportions */
         }
         .carousel-caption {
@@ -61,29 +61,95 @@
             bottom: 20px; /* Ajuster pour que les contrôles ne se chevauchent pas avec la légende */
         }
 
-        .card-img-top {
-        width: 100%;
-        height: auto; /* Ajuste la hauteur automatiquement en fonction de la largeur */
-        max-height: 300px; /* Ajuste cette valeur selon la taille souhaitée pour la photo d'annonce */
-        object-fit: contain; /* Assure que l'image entière est visible sans être rognée */
+
+        .card {
+    width: 100%;
+    max-width: 900px; /* Largeur maximale de la carte */
+    margin: auto; /* Centre la carte horizontalement */
+    margin-bottom: 2rem; /* Ajoute un espace en bas de la carte */
+    overflow: hidden; /* Assure que le contenu ne déborde pas du conteneur */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ajoute une ombre pour un effet d'élévation */
+    border-radius: 8px; /* Ajoute des coins arrondis */
+}
+
+.card-img-top {
+    width: 100%;
+    height: auto;
+    max-height: 500px; /* Augmente la hauteur maximale de l'image */
+    object-fit: cover; /* Remplit le conteneur tout en maintenant les proportions */
+    border-top-left-radius: 8px; /* Coin supérieur gauche arrondi */
+    border-top-right-radius: 8px; /* Coin supérieur droit arrondi */
+}
+
+.card-body {
+    padding: 1.5rem; /* Ajuste le padding autour du contenu */
+}
+
+.card-title {
+    font-weight: bold;
+    font-size: 1.8rem; /* Augmente la taille du titre */
+    text-align: center;
+    margin-bottom: 1rem; /* Ajoute un espace en bas du titre */
+}
+
+.card-text {
+    font-weight: normal;
+    font-size: 1.2rem;
+    text-align: justify; /* Justifie le texte pour une meilleure lisibilité */
+}
+
+.btn-primary {
+    background-color: #0626b5;
+    border-color: #0626b5;
+    display: inline-block; /* Assure que le bouton prend toute la largeur disponible */
+    width: auto; /* Assure que le bouton prend toute la largeur disponible */
+    text-align: center; /* Centre le texte du bouton */
+    margin-top: 1rem; /* Ajoute un espace en haut du bouton */
+}
+
+.btn-primary:hover {
+    background-color: #0626b5;
+    border-color: #0626b5;
+}
+
+
+
+
+
+        .director-section {
+        padding: 20px;
+        background-color: #f8f9fa;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        max-width: 900px;
+        margin: auto;
+        text-align: left;
         }
-        .card-title {
-        font-weight: bold; /* Rendre le titre en gras */
-        font-size: 1.5rem; /* Agrandir la taille du titre */
-        text-align: center; /* Centre le titre */
+        .director-section h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
         }
-        .card-text {
-        font-weight: normal; /* Assure que la description est écrite simplement */
-        font-size: 1.2rem; /* Agrandir la taille de la description */
+        .director-section blockquote {
+        font-size: 16px;
+        color: #666;
+        border-left: 5px solid #0626b5;
+        padding-left: 15px;
+        margin-left: 0;
         }
-        .btn-primary {
-        background-color: #0626b5; /* Changer la couleur de fond du bouton */
-        border-color: #0626b5; /* Changer la couleur de la bordure du bouton */
+        .director-section .read-more-btn {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 10px 20px;
+        background-color: #0626b5;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
         }
-        .btn-primary:hover {
-        background-color: #0626b5; /* Changer la couleur de fond du bouton au survol */
-        border-color: #0626b5; /* Changer la couleur de la bordure du bouton au survol */
+        .director-section .read-more-btn:hover {
+        background-color: #0626b5;
         }
+
     </style>
 
 
