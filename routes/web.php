@@ -1,14 +1,15 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\AnnouncementController;
+use App\Http\Controllers\AccueilController;
 use App\Http\Controllers\ComConsMemberController;
 
-Route::get('/', [AnnouncementController::class, 'index'])->name('acceuil');
-Route::get('/announcements/{id}', [AnnouncementController::class, 'show'])->name('announcements.show');
-Route::get('/images/{id}', [AnnouncementController::class, 'showImage'])->name('images.show');
-Route::get('/announcements/{id}/image', [AnnouncementController::class, 'showImage'])->name('announcements.image');
-
+Route::get('/', [AccueilController::class, 'index'])->name('acceuil');
+Route::get('/announcements/{id}', [AccueilController::class, 'show'])->name('announcements.show');
+Route::get('/images/{id}', [AccueilController::class, 'showImage'])->name('images.show');
+Route::get('/announcements/{id}/image', [AccueilController::class, 'showImage'])->name('announcements.image');
+Route::get('/evenements', [AccueilController::class, 'allEvents'])->name('evenements.index');
+Route::get('/all-announcements', [AccueilController::class, 'allAnnouncements'])->name('announcements.index');
 
 Route::view('dashboard', 'view_admin.dashboard')
     ->middleware(['auth', 'verified'])
@@ -26,10 +27,10 @@ Route::view('/FSTS en chiffres','view_user.A_Propos.FSTS_chiffres')
 Route::view('/Gestions des conseils et des commissions','view_admin.Gestion_Conseil_Commi.ListeMembre')
     ->middleware(['auth'])
     ->name('gest-com-cons');
-Route::get('/add new commission-conseil member',[ComConsMemberController::class,'create'])   
+Route::get('/add new commission-conseil member',[ComConsMemberController::class,'create'])
     ->name('add-com-cons-member');
 Route::post('/add new commission-conseil member',[ComConsMemberController::class,'store'])
-    ->middleware(['auth','verified'])    
+    ->middleware(['auth','verified'])
     ->name('store-com-cons-member');
 
 require __DIR__.'/auth.php';
