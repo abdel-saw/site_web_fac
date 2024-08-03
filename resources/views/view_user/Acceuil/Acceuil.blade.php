@@ -30,7 +30,7 @@
 
         <!-- Section Mot du Directeur -->
         <div class="director-section container my-5">
-            <h2>Mot du doyen</h2>
+            <h2 class="events-title">Mot du doyen</h2>
             <div class="row">
                 <div class="col-md-4">
                     <img src="{{ asset('images/Photo_Doyen_FST_VF2024.png') }}" class="img-fluid" alt="Directeur">
@@ -41,7 +41,6 @@
                         <footer class="blockquote-footer mt-3">Pr. Abdelmajid FARCHI - Doyen de la Faculté des Sciences et Techniques</footer>
                     </blockquote>
                     <a href="{{ route('mots-doyen') }}" class="btn btn-link" style="color: #0626b5;">Lire la suite</a>
-
                 </div>
             </div>
         </div>
@@ -99,6 +98,52 @@
                 <a href="{{ route('announcements.index') }}" class="btn btn-primary btn-lg" style="font-size: 1.2rem; padding: 0.75rem 1.5rem; border-radius: 0.5rem;">Voir toutes les annonces</a>
             </div>
         </div>
+
+        <!-- Section FSTS en chiffres -->
+        <div class="events-section container my-5 fsts-stats">
+            <h2 class="events-title">
+                FSTS en chiffres ( {{ $chiffres->annee_universitaire }} )
+            </h2>
+            <div class="row justify-content-center">
+                <div class="col-md-3">
+                    <div class="card text-center shadow-sm p-4 mb-4 bg-white rounded">
+                        <div class="card-body">
+                            <i class="fas fa-user-graduate fa-3x mb-3" style="color: #0626b5;"></i>
+                            <h5 class="card-title">Étudiants</h5>
+                            <p class="card-text text-center">{{ $chiffres->nombre_etudiants }}</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card text-center shadow-sm p-4 mb-4 bg-white rounded">
+                        <div class="card-body">
+                            <i class="fas fa-chalkboard-teacher fa-3x mb-3" style="color: #0626b5;"></i>
+                            <h5 class="card-title">Enseignants</h5>
+                            <p class="card-text text-center">{{ $chiffres->nombre_enseignants }}</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card text-center shadow-sm p-4 mb-4 bg-white rounded">
+                        <div class="card-body">
+                            <i class="fas fa-building fa-3x mb-3" style="color: #0626b5;"></i>
+                            <h5 class="card-title">Départements</h5>
+                            <p class="card-text text-center">{{ $chiffres->nombre_departements }}</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card text-center shadow-sm p-4 mb-4 bg-white rounded">
+                        <div class="card-body">
+                            <i class="fas fa-trophy fa-3x mb-3" style="color: #0626b5;"></i>
+                            <h5 class="card-title">Lauréats</h5>
+                            <p class="card-text text-center">{{ $chiffres->nombre_laureats }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <style>
             .card {
                 height: 100%;
@@ -114,6 +159,23 @@
             }
             .custom-btn {
                 margin-top: auto;
+            }
+
+            .fsts-stats .card {
+                transition: transform 0.3s ease;
+            }
+
+            .fsts-stats .card:hover {
+                transform: translateY(-10px);
+                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            }
+
+            .fsts-stats .card .fas {
+                transition: color 0.3s ease;
+            }
+
+            .fsts-stats .card:hover .fas {
+                color: #0048a5;
             }
         </style>
     </x-slot>

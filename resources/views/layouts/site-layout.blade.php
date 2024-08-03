@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <!-- Inclure Bootstrap CSS -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
 
@@ -230,11 +230,11 @@
         <div class = " md:flex md:items-center md:justify-between space-x-4">
             <div class="flex">
                 <div class="flex items-center space-x-4">
-                    <a href="https://www.facebook.com"><i class="fa fa-facebook text-zinc-600 text-2xl"></i></a>
-                    <a href="https://www.twitter.com"><i class="fa fa-twitter text-zinc-600 text-2xl"></i></a>
-                    <a href="https://www.linkedin.com"><i class="fa fa-linkedin text-zinc-600 text-2xl"></i></a>
-                    <a href="https://www.youtube.com"><i class="fa fa-youtube text-zinc-600 text-2xl"></i></a>
-                    <a href="https://www.instagram.com"><i class="fa fa-instagram text-zinc-600 text-2xl"></i></a>
+                    <a href="https://www.facebook.com"><i class="fab fa-facebook text-zinc-600 text-2xl"></i></a>
+                    <a href="https://www.twitter.com"><i class="fab fa-twitter text-zinc-600 text-2xl"></i></a>
+                    <a href="https://www.linkedin.com"><i class="fab fa-linkedin text-zinc-600 text-2xl"></i></a>
+                    <a href="https://www.youtube.com"><i class="fab fa-youtube text-zinc-600 text-2xl"></i></a>
+                    <a href="https://www.instagram.com"><i class="fab fa-instagram text-zinc-600 text-2xl"></i></a>
                 </div>
             </div>
 
@@ -255,12 +255,13 @@
         <nav class="md:flex md:items-center md:justify-between py-3 ">
             <div>
                 <span>
-                    <img src="images\uh1_logo.png" alt="uh1-logo " class="h-10 inline ">
+                    <img src="/images/uh1_logo.png" alt="uh1-logo" class="h-10 inline">
                 </span>
                 <span>
-                    <img src="images\fsts_logo.png" alt="uh1-logo " class="h-10 inline ">
+                    <img src="/images/fsts_logo.png" alt="fsts-logo" class="h-10 inline">
                 </span>
             </div>
+
 
             <div class="md:hidden">
                 <button id="nav-toggle" class="text-zinc-600 focus:outline-none">
@@ -374,14 +375,14 @@
             <!-- Logo et reseau sociaux-->
             <div class="flex flex-col">
                 <div class="flex items-center space-x-4">
-                    <a href="https://www.facebook.com"><i class="fa fa-facebook text-white text-2xl"></i></a>
-                    <a href="https://www.twitter.com"><i class="fa fa-twitter text-white text-2xl"></i></a>
-                    <a href="https://www.linkedin.com"><i class="fa fa-linkedin text-white text-2xl"></i></a>
-                    <a href="https://www.youtube.com"><i class="fa fa-youtube text-white text-2xl"></i></a>
-                    <a href="https://www.instagram.com"><i class="fa fa-instagram text-white text-2xl"></i></a>
+                    <a href="https://www.facebook.com"><i class="fab fa-facebook text-white text-2xl"></i></a>
+                    <a href="https://www.twitter.com"><i class="fab fa-twitter text-white text-2xl"></i></a>
+                    <a href="https://www.linkedin.com"><i class="fab fa-linkedin text-white text-2xl"></i></a>
+                    <a href="https://www.youtube.com"><i class="fab fa-youtube text-white text-2xl"></i></a>
+                    <a href="https://www.instagram.com"><i class="fab fa-instagram text-white text-2xl"></i></a>
                 </div>
                 <div class="flex flex-col">
-                    <img src="images\fsts_logo-footer.png" alt="uh1-logo ">
+                    <img src="/images/fsts_logo-footer.png" alt="uh1-logo ">
                 </div>
             </div>
             <!--Contact-->

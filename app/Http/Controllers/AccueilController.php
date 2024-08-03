@@ -5,8 +5,9 @@ namespace App\Http\Controllers;
 use App\Models\Announcement;
 use Illuminate\Http\Request;
 use App\Models\Evenement;
+use App\Models\FstsChiffres;
 
-class AnnouncementController extends Controller
+class AccueilController extends Controller
 {
     public function index()
     {
@@ -16,7 +17,9 @@ class AnnouncementController extends Controller
         // Récupère les 9 derniers événements par date, du plus récent au plus ancien
         $evenements = Evenement::orderBy('date', 'desc')->take(9)->get();
 
-        return view('view_user/Acceuil/Acceuil', compact('announcements', 'evenements'));
+        $chiffres = FstsChiffres::latest('annee_universitaire')->first(); // On récupère les derniers chiffres ajoutés
+
+        return view('view_user/Acceuil/Acceuil', compact('announcements', 'evenements','chiffres'));
     }
 
     public function show($id)
@@ -44,4 +47,5 @@ class AnnouncementController extends Controller
         $announcements = Announcement::orderBy('updated_at', 'desc')->paginate(9); // Pagination de 9 annonces par page
         return view('view_user/Acceuil/all_announcements', compact('announcements'));
     }
+
 }
