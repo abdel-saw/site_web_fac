@@ -13,7 +13,7 @@
                             <p class="card-text"><strong>Date de publication :</strong> {{ $announcement->updated_at->format('d/m/Y') }}</p>
                             <!-- Description simple -->
                             <p class="card-text">{{ $announcement->description }}</p>
-                            <a href="{{ route('acceuil') }}" class="btn btn-primary">Retour</a>
+                            <button class="btn btn-primary" onclick="history.back()">Retour</button>
                         </div>
                     </div>
                 </div>

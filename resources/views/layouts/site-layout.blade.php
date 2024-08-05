@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <!-- Inclure Bootstrap CSS -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
 
@@ -62,59 +62,58 @@
         }
 
 
+
         .card {
-    width: 100%;
-    max-width: 900px; /* Largeur maximale de la carte */
-    margin: auto; /* Centre la carte horizontalement */
-    margin-bottom: 2rem; /* Ajoute un espace en bas de la carte */
-    overflow: hidden; /* Assure que le contenu ne déborde pas du conteneur */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ajoute une ombre pour un effet d'élévation */
-    border-radius: 8px; /* Ajoute des coins arrondis */
-}
+        width: 100%;
+        max-width: 900px; /* Largeur maximale de la carte */
+        margin: auto; /* Centre la carte horizontalement */
+        margin-bottom: 2rem; /* Ajoute un espace en bas de la carte */
+        overflow: hidden; /* Assure que le contenu ne déborde pas du conteneur */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ajoute une ombre pour un effet d'élévation */
+        border-radius: 8px; /* Ajoute des coins arrondis */
+        }
 
-.card-img-top {
-    width: 100%;
-    height: auto;
-    max-height: 500px; /* Augmente la hauteur maximale de l'image */
-    object-fit: cover; /* Remplit le conteneur tout en maintenant les proportions */
-    border-top-left-radius: 8px; /* Coin supérieur gauche arrondi */
-    border-top-right-radius: 8px; /* Coin supérieur droit arrondi */
-}
+        .card-img-top {
+        width: 100%;
+        height: auto;
+        max-height: 500px; /* Augmente la hauteur maximale de l'image */
+        object-fit: cover; /* Remplit le conteneur tout en maintenant les proportions */
+        border-top-left-radius: 8px; /* Coin supérieur gauche arrondi */
+        border-top-right-radius: 8px; /* Coin supérieur droit arrondi */
+        }
 
-.card-body {
-    padding: 1.5rem; /* Ajuste le padding autour du contenu */
-}
+        .card-body {
+        padding: 1.5rem; /* Ajuste le padding autour du contenu */
+        }
 
-.card-title {
-    font-weight: bold;
-    font-size: 1.8rem; /* Augmente la taille du titre */
-    text-align: center;
-    margin-bottom: 1rem; /* Ajoute un espace en bas du titre */
-}
+        .card-title {
+        font-weight: bold;
+        font-size: 1.8rem; /* Augmente la taille du titre */
+        text-align: center;
+        margin-bottom: 1rem; /* Ajoute un espace en bas du titre */
+        }
 
-.card-text {
-    font-weight: normal;
-    font-size: 1.2rem;
-    text-align: justify; /* Justifie le texte pour une meilleure lisibilité */
-}
-
-.btn-primary {
-    background-color: #0626b5;
-    border-color: #0626b5;
-    display: inline-block; /* Assure que le bouton prend toute la largeur disponible */
-    width: auto; /* Assure que le bouton prend toute la largeur disponible */
-    text-align: center; /* Centre le texte du bouton */
-    margin-top: 1rem; /* Ajoute un espace en haut du bouton */
-}
-
-.btn-primary:hover {
-    background-color: #0626b5;
-    border-color: #0626b5;
-}
+        .card-text {
+        font-weight: normal;
+        font-size: 1.2rem;
+        text-align: justify; /* Justifie le texte pour une meilleure lisibilité */
+        }
 
 
 
+        .btn-primary {
+        background-color: #0626b5;
+        border-color: #0626b5;
+        display: inline-block; /* Assure que le bouton prend toute la largeur disponible */
+        width: auto; /* Assure que le bouton prend toute la largeur disponible */
+        text-align: center; /* Centre le texte du bouton */
+        margin-top: 1rem; /* Ajoute un espace en haut du bouton */
+        }
 
+        .btn-primary:hover {
+        background-color: #0626b5;
+        border-color: #0626b5;
+        }
 
         .director-section {
         padding: 20px;
@@ -150,11 +149,79 @@
         background-color: #0626b5;
         }
 
+        /* Style personnalisé pour les boutons */
+        :root {
+                --default-btn-color: #0626b5; /* Couleur de fond par défaut */
+                --hover-btn-color: #0626b5; /* Couleur de fond au survol */
+                --active-btn-color: #0626b5; /* Couleur de fond quand la description est affichée */
+                --btn-text-color: white; /* Couleur du texte */
+            }
+            .custom-btn {
+                background-color: var(--default-btn-color); /* Couleur de fond par défaut */
+                color: var(--btn-text-color); /* Couleur du texte */
+            }
+            .custom-btn:hover {
+                background-color: var(--hover-btn-color); /* Couleur de fond au survol */
+                color: var(--btn-text-color); /* Couleur du texte au survol */
+            }
+            .custom-btn.active {
+                background-color: var(--active-btn-color); /* Couleur de fond quand la description est affichée */
+                color: var(--btn-text-color); /* Couleur du texte quand la description est affichée */
+            }
+            /* Style pour la section Événements */
+            .events-title {
+                font-size: 2rem;
+                font-weight: bold;
+                border-bottom: 2px solid #0626b5; /* Bordure en dessous du titre */
+                padding-bottom: 10px;
+                margin-bottom: 20px;
+                color: #0626b5; /* Couleur du titre */
+            }
+            .events-section {
+                background-color: #f8f9fa; /* Couleur de fond pour la section des événements */
+                padding: 30px 0; /* Espacement autour de la section */
+                border-radius: 10px; /* Coins arrondis pour la section */
+            }
+            .event-description {
+                transition: all 0.3s ease-in-out;
+            }
+
+
+            .pagination {
+            justify-content: center;
+            margin-top: 1.5rem;
+            }
+            .pagination .page-item .page-link {
+            color: black; /* Changez la couleur du texte */
+            border: 1px solid #dee2e6;
+            padding: 0.5rem 0.75rem;
+            }
+            .pagination .page-item.active .page-link {
+            background-color: #0626b5; /* Changez la couleur de fond pour la page active */
+            border-color: #0626b5;
+            color: white; /* Changez la couleur du texte pour la page active */
+            }
+            .pagination .page-item .page-link:hover {
+            background-color: #f8f9fa; /* Changez la couleur de fond au survol */
+            border-color: #dee2e6;
+            }
+
     </style>
 
 
     <!-- Scripts -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
+
+    <script>
+        function toggleDescription(id) {
+            var element = document.getElementById(id);
+            if (element.style.display === 'none') {
+                element.style.display = 'block';
+            } else {
+                element.style.display = 'none';
+            }
+        }
+    </script>
 </head>
 
 <body class="flex flex-col space-y-2">
@@ -163,11 +230,11 @@
         <div class = " md:flex md:items-center md:justify-between space-x-4">
             <div class="flex">
                 <div class="flex items-center space-x-4">
-                    <a href="https://www.facebook.com"><i class="fa fa-facebook text-zinc-600 text-2xl"></i></a>
-                    <a href="https://www.twitter.com"><i class="fa fa-twitter text-zinc-600 text-2xl"></i></a>
-                    <a href="https://www.linkedin.com"><i class="fa fa-linkedin text-zinc-600 text-2xl"></i></a>
-                    <a href="https://www.youtube.com"><i class="fa fa-youtube text-zinc-600 text-2xl"></i></a>
-                    <a href="https://www.instagram.com"><i class="fa fa-instagram text-zinc-600 text-2xl"></i></a>
+                    <a href="https://www.facebook.com"><i class="fab fa-facebook text-zinc-600 text-2xl"></i></a>
+                    <a href="https://www.twitter.com"><i class="fab fa-twitter text-zinc-600 text-2xl"></i></a>
+                    <a href="https://www.linkedin.com"><i class="fab fa-linkedin text-zinc-600 text-2xl"></i></a>
+                    <a href="https://www.youtube.com"><i class="fab fa-youtube text-zinc-600 text-2xl"></i></a>
+                    <a href="https://www.instagram.com"><i class="fab fa-instagram text-zinc-600 text-2xl"></i></a>
                 </div>
             </div>
 
@@ -188,12 +255,13 @@
         <nav class="md:flex md:items-center md:justify-between py-3 ">
             <div>
                 <span>
-                    <img src="images\uh1_logo.png" alt="uh1-logo " class="h-10 inline ">
+                    <img src="/images/uh1_logo.png" alt="uh1-logo" class="h-10 inline">
                 </span>
                 <span>
-                    <img src="images\fsts_logo.png" alt="uh1-logo " class="h-10 inline ">
+                    <img src="/images/fsts_logo.png" alt="fsts-logo" class="h-10 inline">
                 </span>
             </div>
+
 
             <div class="md:hidden">
                 <button id="nav-toggle" class="text-zinc-600 focus:outline-none">
@@ -307,14 +375,14 @@
             <!-- Logo et reseau sociaux-->
             <div class="flex flex-col">
                 <div class="flex items-center space-x-4">
-                    <a href="https://www.facebook.com"><i class="fa fa-facebook text-white text-2xl"></i></a>
-                    <a href="https://www.twitter.com"><i class="fa fa-twitter text-white text-2xl"></i></a>
-                    <a href="https://www.linkedin.com"><i class="fa fa-linkedin text-white text-2xl"></i></a>
-                    <a href="https://www.youtube.com"><i class="fa fa-youtube text-white text-2xl"></i></a>
-                    <a href="https://www.instagram.com"><i class="fa fa-instagram text-white text-2xl"></i></a>
+                    <a href="https://www.facebook.com"><i class="fab fa-facebook text-white text-2xl"></i></a>
+                    <a href="https://www.twitter.com"><i class="fab fa-twitter text-white text-2xl"></i></a>
+                    <a href="https://www.linkedin.com"><i class="fab fa-linkedin text-white text-2xl"></i></a>
+                    <a href="https://www.youtube.com"><i class="fab fa-youtube text-white text-2xl"></i></a>
+                    <a href="https://www.instagram.com"><i class="fab fa-instagram text-white text-2xl"></i></a>
                 </div>
                 <div class="flex flex-col">
-                    <img src="images\fsts_logo-footer.png" alt="uh1-logo ">
+                    <img src="/images/fsts_logo-footer.png" alt="uh1-logo ">
                 </div>
             </div>
             <!--Contact-->
