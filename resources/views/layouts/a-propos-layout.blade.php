@@ -42,7 +42,7 @@
                                 Projet de développement de <br>la FSTS : 2024-2027
                             </a>
                             
-                            <a href="#"
+                            <a href="{{route('cons-com-user')}}"
                                class="text-sm font-bold text-gray-800 hover:underline hover:text-orange-500 nav-item"
                                @click="active = 'section5'"
                                :class="{ 'underline text-2xl bg-gray-200': active === 'section5', 'text-base': active !== 'section5' }">
