@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AccueilController;
 use App\Http\Controllers\ComConsMemberController;
+use App\Http\Controllers\MemberDelete;
 use App\Livewire\ComConsGestion;
 use App\Livewire\MemberSelection;
 use App\Livewire\MemberViewMore;
@@ -44,5 +45,6 @@ Route::get('/com-cons-gestion', ComConsGestion::class)->name('com-cons-gestion')
 Route::get('/member-selection/{com_con_id}', MemberSelection::class)->name('member-selection');
 Route::view('/Vue Conseils et Commissions','view_user.A_Propos.Conseils_Commissions')->name('cons-com-user');
 Route::get('/view more/{id} {view_type}',MemberViewMore::class)->name('view-more');
+//Route::get('/delete Com-Cons/{id}',[ComConsGestion::class,'deleteCom'])->name('delete-com');
 
 require __DIR__.'/auth.php';

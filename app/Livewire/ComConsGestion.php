@@ -34,6 +34,16 @@ class ComConsGestion extends Component
     return redirect()->route('member-selection', ['com_con_id' => $this->selectedComConId]);
 }
 
+public function deleteCom($id)
+{
+    $com_cons=Commissions_Conseil::find($id);
+    if($com_cons)
+    {
+        $com_cons->delete();
+        return redirect()->route('voir-com-cons');
+    }
+}
+
 
     public function render()
     {
