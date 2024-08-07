@@ -3,6 +3,9 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AccueilController;
 use App\Http\Controllers\ComConsMemberController;
+use App\Livewire\ComConsGestion;
+use App\Livewire\MemberSelection;
+use App\Livewire\MemberViewMore;
 
 Route::get('/', [AccueilController::class, 'index'])->name('acceuil');
 Route::get('/announcements/{id}', [AccueilController::class, 'show'])->name('announcements.show');
@@ -27,10 +30,19 @@ Route::view('/FSTS en chiffres','view_user.A_Propos.FSTS_chiffres')
 Route::view('/Gestions des conseils et des commissions','view_admin.Gestion_Conseil_Commi.ListeMembre')
     ->middleware(['auth'])
     ->name('gest-com-cons');
-Route::get('/add new commission-conseil member',[ComConsMemberController::class,'create'])
+    Route::get('/add new commission-conseil member',[ComConsMemberController::class,'createMember'])   
     ->name('add-com-cons-member');
-Route::post('/add new commission-conseil member',[ComConsMemberController::class,'store'])
-    ->middleware(['auth','verified'])
+Route::post('/add new commission-conseil member',[ComConsMemberController::class,'storeMember'])
+    ->middleware(['auth','verified'])    
     ->name('store-com-cons-member');
+Route::get('/add new commission-conseil',[ComConsMemberController::class,'createComm_Cons'])->name('add-com-cons');
+Route::post('/add new commission-conseil-success',[ComConsMemberController::class,'storeComm_Cons'])
+    ->middleware(['auth','verified'])    
+    ->name('store-com-cons');
+Route::view('/Gestion Conseils et Commissions','view_admin.Gestion_Conseil_Commi.VoirComCons')->name('voir-com-cons');
+Route::get('/com-cons-gestion', ComConsGestion::class)->name('com-cons-gestion');
+Route::get('/member-selection/{com_con_id}', MemberSelection::class)->name('member-selection');
+Route::view('/Vue Conseils et Commissions','view_user.A_Propos.Conseils_Commissions')->name('cons-com-user');
+Route::get('/view more/{id} {view_type}',MemberViewMore::class)->name('view-more');
 
 require __DIR__.'/auth.php';

@@ -11,7 +11,7 @@
         </div>
         <!--Table des membres-->
         <div>
-
+          <livewire:members-table />
         </div>
 
     </div>

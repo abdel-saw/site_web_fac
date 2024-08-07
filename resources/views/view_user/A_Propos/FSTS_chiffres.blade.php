@@ -19,7 +19,7 @@
                 <i class="fa fa-graduation-cap fa-2x"></i>
             </div>
             <!--counter-->
-            <div class="counter text-3xl font-bold pt-3" data-end="1088">0</div>
+            <div class="counter text-3xl font-bold pt-3" data-end="650">0</div>
             <!--text-->
             <p class="font-semibold">nouveaux inscrits en première année parcours</p>
         </div>
@@ -29,7 +29,7 @@
                 <i class="fa fa-graduation-cap fa-2x"></i>
             </div>
             <!--counter-->
-            <div class="counter text-3xl font-bold pt-3" data-end="1088">0</div>
+            <div class="counter text-3xl font-bold pt-3" data-end="145">0</div>
             <!--text-->
             <p class="font-semibold">nouveaux inscrits en première année parcours</p>
         </div>
@@ -39,7 +39,7 @@
                 <i class="fa fa-graduation-cap fa-2x"></i>
             </div>
             <!--counter-->
-            <div class="counter text-3xl font-bold pt-3" data-end="1088">0</div>
+            <div class="counter text-3xl font-bold pt-3" data-end="318">0</div>
             <!--text-->
             <p class="font-semibold">nouveaux inscrits en première année parcours</p>
         </div>
@@ -49,7 +49,7 @@
                 <i class="fa fa-graduation-cap fa-2x"></i>
             </div>
             <!--counter-->
-            <div class="counter text-3xl font-bold pt-3" data-end="1088">0</div>
+            <div class="counter text-3xl font-bold pt-3" data-end="380">0</div>
             <!--text-->
             <p class="font-semibold">nouveaux inscrits en première année parcours</p>
         </div>
@@ -59,7 +59,7 @@
                 <i class="fa fa-graduation-cap fa-2x"></i>
             </div>
             <!--counter-->
-            <div class="counter text-3xl font-bold pt-3" data-end="1088">0</div>
+            <div class="counter text-3xl font-bold pt-3" data-end="928">0</div>
             <!--text-->
             <p class="font-semibold">nouveaux inscrits en première année parcours</p>
         </div>
@@ -69,7 +69,7 @@
                 <i class="fa fa-graduation-cap fa-2x"></i>
             </div>
             <!--counter-->
-            <div class="counter text-3xl font-bold pt-3" data-end="1088">0</div>
+            <div class="counter text-3xl font-bold pt-3" data-end="109">0</div>
             <!--text-->
             <p class="font-semibold">nouveaux inscrits en première année parcours</p>
         </div>
@@ -79,7 +79,7 @@
                 <i class="fa fa-graduation-cap fa-2x"></i>
             </div>
             <!--counter-->
-            <div class="counter text-3xl font-bold pt-3" data-end="1088">0</div>
+            <div class="counter text-3xl font-bold pt-3" data-end="230">0</div>
             <!--text-->
             <p class="font-semibold">nouveaux inscrits en première année parcours</p>
         </div>
@@ -89,7 +89,7 @@
                 <i class="fa fa-graduation-cap fa-2x"></i>
             </div>
             <!--counter-->
-            <div class="counter text-3xl font-bold pt-3" data-end="1088">0</div>
+            <div class="counter text-3xl font-bold pt-3" data-end="75">0</div>
             <!--text-->
             <p class="font-semibold">nouveaux inscrits en première année parcours</p>
         </div>
@@ -99,7 +99,7 @@
                 <i class="fa fa-graduation-cap fa-2x"></i>
             </div>
             <!--counter-->
-            <div class="counter text-3xl font-bold pt-3" data-end="1088">0</div>
+            <div class="counter text-3xl font-bold pt-3" data-end="11">0</div>
             <!--text-->
             <p class="font-semibold">nouveaux inscrits en première année parcours</p>
         </div>
@@ -109,7 +109,7 @@
                 <i class="fa fa-graduation-cap fa-2x"></i>
             </div>
             <!--counter-->
-            <div class="counter text-3xl font-bold pt-3" data-end="1088">0</div>
+            <div class="counter text-3xl font-bold pt-3" data-end="10">0</div>
             <!--text-->
             <p class="font-semibold">nouveaux inscrits en première année parcours</p>
         </div>
@@ -119,7 +119,7 @@
                 <i class="fa fa-graduation-cap fa-2x"></i>
             </div>
             <!--counter-->
-            <div class="counter text-3xl font-bold pt-3" data-end="1088">0</div>
+            <div class="counter text-3xl font-bold pt-3" data-end="1">0</div>
             <!--text-->
             <p class="font-semibold">nouveaux inscrits en première année parcours</p>
         </div>
@@ -129,7 +129,7 @@
                 <i class="fa fa-graduation-cap fa-2x"></i>
             </div>
             <!--counter-->
-            <div class="counter text-3xl font-bold pt-3" data-end="1088">0</div>
+            <div class="counter text-3xl font-bold pt-3" data-end="205">0</div>
             <!--text-->
             <p class="font-semibold">nouveaux inscrits en première année parcours</p>
         </div>
@@ -139,7 +139,7 @@
                 <i class="fa fa-graduation-cap fa-2x"></i>
             </div>
             <!--counter-->
-            <div class="counter text-3xl font-bold pt-3" data-end="1088">0</div>
+            <div class="counter text-3xl font-bold pt-3" data-end="52">0</div>
             <!--text-->
             <p class="font-semibold">nouveaux inscrits en première année parcours</p>
         </div>
@@ -149,7 +149,7 @@
                 <i class="fa fa-graduation-cap fa-2x"></i>
             </div>
             <!--counter-->
-            <div class="counter text-3xl font-bold pt-3" data-end="1088">0</div>
+            <div class="counter text-3xl font-bold pt-3" data-end="6">0</div>
             <!--text-->
             <p class="font-semibold">nouveaux inscrits en première année parcours</p>
         </div>
@@ -159,7 +159,7 @@
                 <i class="fa fa-graduation-cap fa-2x"></i>
             </div>
             <!--counter-->
-            <div class="counter text-3xl font-bold pt-3" data-end="1088">0</div>
+            <div class="counter text-3xl font-bold pt-3" data-end="1">0</div>
             <!--text-->
             <p class="font-semibold">nouveaux inscrits en première année parcours</p>
         </div>

@@ -10,6 +10,7 @@ class Members extends Model
     use HasFactory;
 
     protected $fillable=['nom','prenom','email','fonction','numero_telephone'];
+    public $timestamps = false;
     public function commissions()
     {
         return $this->belongsToMany(Commissions_Conseil::class ,'com_cons_members');
