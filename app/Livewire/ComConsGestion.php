@@ -11,6 +11,7 @@ class ComConsGestion extends Component
 {
     public $view_type;
     public $com_cons;
+    
     public $selectedComConId = null;
     public $selectedComCon = null;
     public $com_cons_members = [];

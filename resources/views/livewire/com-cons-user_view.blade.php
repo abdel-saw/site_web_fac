@@ -43,7 +43,7 @@
                             <td class="px-4 py-2">{{ $member->prenom }}</td>
                             <td class="px-4 py-2">{{ $member->fonction }}</td>
                             <td class="px-4 py-2">
-                                <button wire:click="viewMore({{ $member->id }})" class="bg-yellow-500 hover:bg-yellow-700 text-black font-bold py-1 px-3 rounded focus:outline-none focus:shadow-outline">Voir Plus</button>
+                                <a href="{{route('view-more',['id'=> $member->id ,'view_type'=>'user'])}}"> voir plus  </a>
                             </td>
                         </tr>
                     @endforeach

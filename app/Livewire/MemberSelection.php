@@ -30,6 +30,6 @@ class MemberSelection extends Component
 
     public function render()
     {
-        return view('livewire.member-selection')->layout('layouts.app');
+        return view('livewire.member-selection')->layout('layouts.gestion-com-cons-layout');
     }
 }

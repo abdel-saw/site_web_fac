@@ -47,10 +47,9 @@
                             <td class="px-4 py-2">{{ $member->id }}</td>
                             <td class="px-4 py-2">{{ $member->nom }}</td>
                             <td class="px-4 py-2">{{ $member->prenom }}</td>
-                            <td class="px-4 py-2">
-                                <button wire:click="viewMore({{ $member->id }})" class="bg-yellow-500 hover:bg-yellow-700 text-black font-bold py-1 px-3 rounded focus:outline-none focus:shadow-outline">Voir Plus</button>
-                                <button wire:click="modify({{ $member->id }})" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-3 rounded focus:outline-none focus:shadow-outline">Modifier</button>
-                                <button wire:click="delete({{ $member->id }})" class="bg-red-500 hover:bg-red-700 text-white font-bold py-1 px-3 rounded focus:outline-none focus:shadow-outline">Supprimer</button>
+                            <td class="px-4 py-2 text-center">
+                                <a href="{{route('view-more',['id'=> $member->id ,'view_type'=>'admin'])}}"> voir plus | </a>
+                                <a href="{{route('view-more',['id'=> $member->id ,'view_type'=>'admin'])}}"> supprimer</a>
                             </td>
                         </tr>
                     @endforeach
