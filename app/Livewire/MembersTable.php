@@ -23,7 +23,12 @@ class MembersTable extends Component
     }
     public function delete($id)
     {
-        //
+        $member = Members::find($id);
+        if($member)
+        {
+            $member->delete();
+            return redirect()->route('gest-com-cons');
+        }
     }
     public function render()
     {

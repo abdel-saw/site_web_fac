@@ -21,7 +21,7 @@
                 <td class="px-4 py-3">
                     <button wire:click="viewMore({{$member->id}})">voir plus |</button>
                     <button wire:click="modify({{$member->id}})">modifier |</button>
-                    <button wire:click="delete({{$member->id}})">supprimer</button>
+                    <button wire:click="delete({{$member->id}})" >supprimer</button>
                 </td>
             </tr>
             @endforeach
